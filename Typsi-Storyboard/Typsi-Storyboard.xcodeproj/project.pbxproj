@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C07DF1729D5D0DD00593145 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07DF1629D5D0DD00593145 /* ResultsViewController.swift */; };
 		1C38426529D59DC30063D185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38426429D59DC30063D185 /* AppDelegate.swift */; };
 		1C38426729D59DC30063D185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38426629D59DC30063D185 /* SceneDelegate.swift */; };
 		1C38426929D59DC30063D185 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38426829D59DC30063D185 /* CalculatorViewController.swift */; };
@@ -16,7 +17,6 @@
 		1C38427C29D59DC70063D185 /* Typsi_StoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38427B29D59DC70063D185 /* Typsi_StoryboardTests.swift */; };
 		1C38428629D59DC70063D185 /* Typsi_StoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38428529D59DC70063D185 /* Typsi_StoryboardUITests.swift */; };
 		1C38428829D59DC70063D185 /* Typsi_StoryboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38428729D59DC70063D185 /* Typsi_StoryboardUITestsLaunchTests.swift */; };
-		1C38429529D5C2920063D185 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38429429D5C2920063D185 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C07DF1629D5D0DD00593145 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		1C38426129D59DC30063D185 /* Typsi-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Typsi-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C38426429D59DC30063D185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C38426629D59DC30063D185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		1C38428129D59DC70063D185 /* Typsi-StoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Typsi-StoryboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C38428529D59DC70063D185 /* Typsi_StoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typsi_StoryboardUITests.swift; sourceTree = "<group>"; };
 		1C38428729D59DC70063D185 /* Typsi_StoryboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typsi_StoryboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1C38429429D5C2920063D185 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +132,8 @@
 		1C38429629D5C2B40063D185 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1C07DF1629D5D0DD00593145 /* ResultsViewController.swift */,
 				1C38426829D59DC30063D185 /* CalculatorViewController.swift */,
-				1C38429429D5C2920063D185 /* ResultsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 				1C38426929D59DC30063D185 /* CalculatorViewController.swift in Sources */,
 				1C38426529D59DC30063D185 /* AppDelegate.swift in Sources */,
 				1C38426729D59DC30063D185 /* SceneDelegate.swift in Sources */,
-				1C38429529D5C2920063D185 /* ResultsViewController.swift in Sources */,
+				1C07DF1729D5D0DD00593145 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
