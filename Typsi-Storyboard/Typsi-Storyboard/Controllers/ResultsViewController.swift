@@ -18,7 +18,10 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        fillData()
+    }
+    
+    private func fillData() {
         totalLabel.text = result
         settingsLabel.text = "Split between \(split) people, with \(tip)% tip."
     }

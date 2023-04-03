@@ -23,8 +23,7 @@ class CalculatorViewController: UIViewController {
     var finalValue = "0.0"
     var tipPct: Int = 0
     
-
-
+    
     @IBAction func tipChanged(_ sender: UIButton) {
         billTextField.endEditing(true)
         
@@ -32,7 +31,6 @@ class CalculatorViewController: UIViewController {
         tenPctButton.isSelected = false
         twentyPctButton.isSelected = false
         sender.isSelected = true
-        
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
@@ -40,6 +38,32 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func calculatedPressed(_ sender: UIButton) {
+        textFieldIsEmpty()
+        calculateBill()
+        resetTextField()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let destinationVC = segue.destination as! ResultsViewController
+            destinationVC.result = finalValue
+            destinationVC.tip = tipPct
+            destinationVC.split = numberToShare
+    }
+    
+    private func textFieldIsEmpty (){
+        if billTextField.text != "" {
+            billValue = Double(billTextField.text!)!
+        } else {
+            billValue = 0
+        }
+    }
+    
+    private func resetTextField() {
+        billTextField.text = ""
+    }
+    
+    private func calculateBill() {
+        
         var tipValue: Double
         
         if zeroPctButton.isSelected == true {
@@ -53,26 +77,9 @@ class CalculatorViewController: UIViewController {
             tipPct = 20
         }
         
-        if billTextField.text != "" {
-            billValue = Double(billTextField.text!)!
-        }
-        
-    
         numberToShare = Int(splitBillLabel.text!)!
         billShared = billValue * tipValue / Double(numberToShare)
         finalValue = String(format: "%.2f", billShared)
-
-        
-        billTextField.text = ""
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            
-            let destinationVC = segue.destination as! ResultsViewController
-            destinationVC.result = finalValue
-            destinationVC.tip = tipPct
-            destinationVC.split = numberToShare
-    }
-    
 }
 
